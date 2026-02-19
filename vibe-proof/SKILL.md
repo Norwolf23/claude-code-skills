@@ -300,4 +300,4 @@ git push origin main
 
 ---
 
-*Part of the [Hermetic Distillations](https://github.com/HermeticOrmus/hermetic-distillations) collection -- skills extracted from real AI-assisted development sessions.*
+*Part of the [Claude Distillations](https://github.com/HermeticOrmus/claude-distillations) collection -- skills extracted from real AI-assisted development sessions.*

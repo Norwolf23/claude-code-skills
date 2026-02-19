@@ -1,4 +1,4 @@
-# Contributing to Hermetic Distillations
+# Contributing to Claude Distillations
 
 Thank you for your interest in contributing. This collection grows through real work, not theoretical exercises.
 

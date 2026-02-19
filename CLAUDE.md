@@ -1,4 +1,4 @@
-# Hermetic Distillations
+# Claude Distillations
 
 A collection of reusable Claude Code skills distilled from real development sessions.
 
