@@ -25,6 +25,7 @@ The four stages follow the alchemical opus: **Nigredo** (dissolve the session in
 | Skill | Description | Potency | Origin |
 |-------|-------------|---------|--------|
 | [product-feasibility-scout](./product-feasibility-scout/) | Systematic API landscape and feasibility research for product concepts | 0.86 | Luciernaga parental awareness tool (Feb 2026) |
+| [site-perf-audit](./site-perf-audit/) | Systematic diagnosis and optimization of Next.js / React website performance | 0.89 | BioGenesis website speed optimization (Feb 2026) |
 
 ---
 
