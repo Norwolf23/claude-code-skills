@@ -306,4 +306,4 @@ Extracted from a real project: a medical clinic website on Next.js + Vercel that
 
 ---
 
-*Part of the [Claude Distillations](https://github.com/HermeticOrmus/claude-distillations) collection -- skills extracted from real AI-assisted development sessions.*
+*Part of [Claude Code Skills](https://github.com/HermeticOrmus/claude-code-skills) -- reusable skills extracted from real AI-assisted development sessions.*

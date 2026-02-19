@@ -1,24 +1,23 @@
-# Contributing to Claude Distillations
+# Contributing to Claude Code Skills
 
 Thank you for your interest in contributing. This collection grows through real work, not theoretical exercises.
 
-## What Makes a Good Distillation
+## What Makes a Good Skill
 
-A distillation must:
+A skill must:
 
 1. **Emerge from real work** -- It was extracted from an actual development session, not invented for the repo
-2. **Pass the potency threshold** -- Aggregate potency score >= 0.75
-3. **Be self-contained** -- A reader should be able to apply it without external context
-4. **Include an Origin section** -- Document the session that produced it
-5. **Follow Gold Hat** -- Empower users, never extract from them
+2. **Be self-contained** -- A reader should be able to apply it without external context
+3. **Include an Origin section** -- Document the session that produced it
+4. **Follow Gold Hat** -- Empower users, never extract from them
 
 ## Structure
 
-Each distillation is a directory containing at minimum a `SKILL.md`:
+Each skill is a directory containing at minimum a `SKILL.md`:
 
 ```
 your-skill-name/
-  SKILL.md             # Required: the distilled skill
+  SKILL.md             # Required: the skill
   references/          # Optional: supporting files, templates, examples
 ```
 
@@ -53,10 +52,10 @@ description: "One-line description. Trigger phrases: 'when to use this'."
 ## Submitting
 
 1. Fork the repo
-2. Create a branch: `distill/your-skill-name`
+2. Create a branch: `skill/your-skill-name`
 3. Add your skill directory
 4. Update the Catalog table in README.md
-5. Submit a PR with the distillation trace (complexity score, potency metrics)
+5. Submit a PR
 
 ## Code of Conduct
 

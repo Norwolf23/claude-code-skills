@@ -1,6 +1,6 @@
-# Claude Distillations
+# Claude Code Skills
 
-A collection of reusable Claude Code skills distilled from real development sessions.
+A collection of reusable Claude Code skills extracted from real development sessions.
 
 ## Structure
 
@@ -12,11 +12,10 @@ A collection of reusable Claude Code skills distilled from real development sess
 
 1. Create directory: `<skill-name>/SKILL.md`
 2. Add entry to the Catalog table in README.md
-3. Commit: `feat(distill): add <skill-name> -- <one-line description>`
+3. Commit: `feat: add <skill-name> -- <one-line description>`
 
 ## Standards
 
-- Skills must pass potency threshold (>= 0.75)
 - Skills must emerge from real work (not theoretical)
 - Follow existing SKILL.md format (frontmatter + sections)
 - Gold Hat: empower, never extract

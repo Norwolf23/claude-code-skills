@@ -155,4 +155,4 @@ Distilled from Luciernaga feasibility research session (Feb 2026). Original sess
 
 ---
 
-*Part of the [Claude Distillations](https://github.com/HermeticOrmus/claude-distillations) collection -- skills extracted from real AI-assisted development sessions.*
+*Part of [Claude Code Skills](https://github.com/HermeticOrmus/claude-code-skills) -- reusable skills extracted from real AI-assisted development sessions.*

@@ -1,4 +1,4 @@
-# Claude Distillations
+# Claude Code Skills
 
 Reusable [Claude Code](https://docs.anthropic.com/en/docs/build-with-claude/claude-code) skills extracted from real AI-assisted development sessions.
 
@@ -30,7 +30,7 @@ Each skill is self-contained with clear instructions, templates, quality criteri
 ## Structure
 
 ```
-claude-distillations/
+claude-code-skills/
   README.md              # This catalog
   LICENSE                # MIT + Gold Hat Addendum
   CLAUDE.md              # Repo instructions for Claude Code
@@ -61,7 +61,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Skills should:
 
 ## Philosophy
 
-These skills follow the **Gold Hat** principle: every tool should empower its user, not create dependency. Skills teach a process, not just execute a task. If you're curious about the deeper methodology behind the extraction process, see the [wiki](https://github.com/HermeticOrmus/claude-distillations/wiki).
+These skills follow the **Gold Hat** principle: every tool should empower its user, not create dependency. Skills teach a process, not just execute a task. If you're curious about the deeper methodology behind the extraction process, see the [wiki](https://github.com/HermeticOrmus/claude-code-skills/wiki).
 
 ## License
 
