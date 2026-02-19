@@ -1,0 +1,22 @@
+# Hermetic Distillations
+
+A collection of reusable Claude Code skills distilled from real development sessions.
+
+## Structure
+
+- Each skill lives in its own directory with a `SKILL.md`
+- README.md contains the catalog table -- update it when adding skills
+- Every skill must have an Origin section documenting its source
+
+## Adding a New Skill
+
+1. Create directory: `<skill-name>/SKILL.md`
+2. Add entry to the Catalog table in README.md
+3. Commit: `feat(distill): add <skill-name> -- <one-line description>`
+
+## Standards
+
+- Skills must pass potency threshold (>= 0.75)
+- Skills must emerge from real work (not theoretical)
+- Follow existing SKILL.md format (frontmatter + sections)
+- Gold Hat: empower, never extract
