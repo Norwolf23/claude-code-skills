@@ -3,7 +3,6 @@
 > Systematic diagnosis and optimization of Next.js / React websites.
 
 **Trigger**: "audit performance", "site is slow", "optimize the website", "performance check"
-**Potency**: 0.88 | **Type**: Skill (High)
 
 ---
 
@@ -301,5 +300,10 @@ For the full research backing this skill, see:
 
 ---
 
-*Distilled from BioGenesis optimization session (Feb 2026)*
-*JS: 2.0MB -> 817KB (59%) | Video: 13.5MB -> 3.0MB (77%) | Build: 6.6s -> 4.0s*
+## Origin
+
+Extracted from a real project: a medical clinic website on Next.js + Vercel that was loading extremely slowly. Root cause turned out to be 85% code (heavy JS libraries for simple visual effects, uncompressed video, unnecessary client components) and 15% hosting. Applying this process reduced JS bundle 59% (2.0MB to 817KB), video payload 77% (13.5MB to 3.0MB), and build time 39% (6.6s to 4.0s).
+
+---
+
+*Part of the [Hermetic Distillations](https://github.com/HermeticOrmus/hermetic-distillations) collection -- skills extracted from real AI-assisted development sessions.*

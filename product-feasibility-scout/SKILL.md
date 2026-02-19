@@ -155,4 +155,4 @@ Distilled from Luciernaga feasibility research session (Feb 2026). Original sess
 
 ---
 
-*"Before you build, scout the terrain."*
+*Part of the [Hermetic Distillations](https://github.com/HermeticOrmus/hermetic-distillations) collection -- skills extracted from real AI-assisted development sessions.*
