@@ -10,6 +10,7 @@ Every skill here was built to solve a real problem on a real project -- then gen
 
 | Skill | What It Does | Origin |
 |-------|-------------|--------|
+| [google-docs-markdown](./google-docs-markdown/) | Convert markdown to formatted Google Docs with folders, sharing, and logo branding | Event protocol delivery (Feb 2026) |
 | [product-feasibility-scout](./product-feasibility-scout/) | Systematic API landscape and feasibility research for product concepts | Parental awareness app research (Feb 2026) |
 | [site-perf-audit](./site-perf-audit/) | Diagnose and fix performance issues on Next.js / React websites | Medical clinic website optimization (Feb 2026) |
 | [vibe-proof](./vibe-proof/) | Security hardening for vibe-coded full-stack apps via parallel multi-agent audit | E-commerce platform security hardening (Feb 2026) |
