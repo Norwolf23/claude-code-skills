@@ -15,6 +15,7 @@ Every skill here was built to solve a real problem on a real project -- then gen
 | [google-drive-operator](./google-drive-operator/) | Analyze, restructure, and manage Google Drive shared folders with full CRUD operations | Client feedback collaboration space (Feb 2026) |
 | [product-feasibility-scout](./product-feasibility-scout/) | Systematic API landscape and feasibility research for product concepts | Parental awareness app research (Feb 2026) |
 | [site-perf-audit](./site-perf-audit/) | Diagnose and fix performance issues on Next.js / React websites | Medical clinic website optimization (Feb 2026) |
+| [unwoke](./unwoke/) | Strip AI theater and ideological bias — 10 sins, 10 rules, 7-point self-check for truth-seeking responses | Anti-woke AI communication research (Mar 2026) |
 | [vibe-proof](./vibe-proof/) | Security hardening for vibe-coded full-stack apps via parallel multi-agent audit | E-commerce platform security hardening (Feb 2026) |
 
 ---
