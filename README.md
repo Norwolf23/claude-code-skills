@@ -10,13 +10,19 @@ Every skill here was built to solve a real problem on a real project -- then gen
 
 | Skill | What It Does | Origin |
 |-------|-------------|--------|
+| [android-apk](./android-apk/) | Build native Android APKs without Android Studio using raw SDK tools (~30KB, <2s builds) | Share-sheet APK for CF Access-protected API (Mar 2026) |
+| [close](./close/) | End-of-session ritual -- captures state, updates memory, writes summary, exits cleanly | Session lifecycle management (Mar 2026) |
 | [google-docs-markdown](./google-docs-markdown/) | Convert markdown to formatted Google Docs with folders, sharing, and logo branding | Event protocol delivery (Feb 2026) |
-| [osint](./osint/) | Multi-wave OSINT research methodology with progressive deepening, source hierarchy, and structured intel output | Intelligence research session (Feb 2026) |
 | [google-drive-operator](./google-drive-operator/) | Analyze, restructure, and manage Google Drive shared folders with full CRUD operations | Client feedback collaboration space (Feb 2026) |
+| [handoff](./handoff/) | Write a complete session state capture to HANDOFF.md for cross-session continuity | Session lifecycle management (Mar 2026) |
+| [osint](./osint/) | Multi-wave OSINT research methodology with progressive deepening, source hierarchy, and structured intel output | Intelligence research session (Feb 2026) |
+| [pc-ops](./pc-ops/) | Windows system cleanup -- audit programs, services, startup items, processes, and disk usage | OEM laptop system cleanup (Feb 2026) |
+| [pickup](./pickup/) | Read a HANDOFF.md and restore session context -- the opposite of /handoff | Session lifecycle management (Mar 2026) |
 | [product-feasibility-scout](./product-feasibility-scout/) | Systematic API landscape and feasibility research for product concepts | Parental awareness app research (Feb 2026) |
+| [ship](./ship/) | Unified shipping pipeline -- scaffold docs, create GitHub repo, push, optional social posting | Open-source publishing workflow (Mar 2026) |
 | [site-perf-audit](./site-perf-audit/) | Diagnose and fix performance issues on Next.js / React websites | Medical clinic website optimization (Feb 2026) |
-| [unwoke](./unwoke/) | Strip AI theater and ideological bias — 10 sins, 10 rules, 7-point self-check for truth-seeking responses | Anti-woke AI communication research (Mar 2026) |
-| [vibe-proof](./vibe-proof/) | Security hardening for vibe-coded full-stack apps via parallel multi-agent audit | E-commerce platform security hardening (Feb 2026) |
+| [unwoke](./unwoke/) | Strip AI theater and ideological bias -- 10 sins, 10 rules, 7-point self-check for truth-seeking responses | Anti-woke AI communication research (Mar 2026) |
+| [vibe-proof](./vibe-proof/) | Security hardening for vibe-coded full-stack apps via parallel multi-agent audit (v2: 85+ issues across 2 projects) | E-commerce + medical platform hardening (Feb 2026) |
 
 ---
 
