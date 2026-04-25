@@ -33,11 +33,13 @@ Some skills graduate into their own repos with richer docs and individual instal
 | Repo | What it does |
 |---|---|
 | [ormus-handoff](https://github.com/HermeticOrmus/ormus-handoff) | Session state capture — resume tomorrow where you left off, even on a different machine |
+| [ormus-pickup](https://github.com/HermeticOrmus/ormus-pickup) | Restore session context at the start of a new session — inverse of /handoff |
 | [ormus-absorb](https://github.com/HermeticOrmus/ormus-absorb) | Distill what a session taught you into persistent memory — the learning ritual |
 | [ormus-explore](https://github.com/HermeticOrmus/ormus-explore) | Token-optimized AST-based code search (4-8x cheaper than reading full files) |
+| [ormus-vibe-proof](https://github.com/HermeticOrmus/ormus-vibe-proof) | Security hardening for vibe-coded full-stack apps — parallel audits + prioritized fixes |
 | [ormus-meta-prompting](https://github.com/HermeticOrmus/ormus-meta-prompting) | Categorical foundations for prompt engineering — 100% accuracy on Game of 24 |
 
-These four together form the **ormus session lifecycle** — composable Claude Code skills for serious cross-day, cross-machine work.
+These six together form the **ormus session lifecycle** — composable Claude Code skills for serious cross-day, cross-machine work.
 
 ---
 
