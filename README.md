@@ -26,6 +26,21 @@ Every skill here was built to solve a real problem on a real project -- then gen
 
 ---
 
+## Spotlight: standalone repos
+
+Some skills graduate into their own repos with richer docs and individual install paths. Star them directly:
+
+| Repo | What it does |
+|---|---|
+| [ormus-handoff](https://github.com/HermeticOrmus/ormus-handoff) | Session state capture — resume tomorrow where you left off, even on a different machine |
+| [ormus-absorb](https://github.com/HermeticOrmus/ormus-absorb) | Distill what a session taught you into persistent memory — the learning ritual |
+| [ormus-explore](https://github.com/HermeticOrmus/ormus-explore) | Token-optimized AST-based code search (4-8x cheaper than reading full files) |
+| [ormus-meta-prompting](https://github.com/HermeticOrmus/ormus-meta-prompting) | Categorical foundations for prompt engineering — 100% accuracy on Game of 24 |
+
+These four together form the **ormus session lifecycle** — composable Claude Code skills for serious cross-day, cross-machine work.
+
+---
+
 ## How to Use
 
 These are Claude Code skills. To use one:
