@@ -15,6 +15,7 @@ Every skill here was built to solve a real problem on a real project -- then gen
 | [google-docs-markdown](./google-docs-markdown/) | Convert markdown to formatted Google Docs with folders, sharing, and logo branding | Event protocol delivery (Feb 2026) |
 | [google-drive-operator](./google-drive-operator/) | Analyze, restructure, and manage Google Drive shared folders with full CRUD operations | Client feedback collaboration space (Feb 2026) |
 | [handoff](./handoff/) | Write a complete session state capture to HANDOFF.md for cross-session continuity | Session lifecycle management (Mar 2026) |
+| [meta-prompting-suite](./meta-prompting-suite/) | 9 composable meta-prompting patterns — neutral 4 (prime/distill/goal/agents) + alchemical 5 (Hermetic-voiced prompt/agent/goal/distill/flow). Wrappers over the categorical engine; bridges into built-in /goal and /agents | Daily meta-prompting kit (May 2026) |
 | [osint](./osint/) | Multi-wave OSINT research methodology with progressive deepening, source hierarchy, and structured intel output | Intelligence research session (Feb 2026) |
 | [pc-ops](./pc-ops/) | Windows system cleanup -- audit programs, services, startup items, processes, and disk usage | OEM laptop system cleanup (Feb 2026) |
 | [pickup](./pickup/) | Read a HANDOFF.md and restore session context -- the opposite of /handoff | Session lifecycle management (Mar 2026) |
