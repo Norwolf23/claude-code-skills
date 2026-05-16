@@ -12,6 +12,7 @@ Every skill here was built to solve a real problem on a real project -- then gen
 |-------|-------------|--------|
 | [android-apk](./android-apk/) | Build native Android APKs without Android Studio using raw SDK tools (~30KB, <2s builds) | Share-sheet APK for CF Access-protected API (Mar 2026) |
 | [calcinate](./calcinate/) | Burn project bloat to reveal essence — intent-anchored, 4 parallel detection agents, tiered plan, gated burn with per-item revert | First test ran on the skills home itself (May 2026) |
+| [claude-md-overhaul](./claude-md-overhaul/) | Audit and improve a Claude Code memory layer end-to-end — measure CLAUDE.md and MEMORY.md against Anthropic caps, fill project-portfolio gaps, prune index, install hooks, tier-by-tier with cap-fitting verification | End-to-end memory-layer audit-and-improve session (May 2026) |
 | [close](./close/) | End-of-session ritual -- captures state, updates memory, writes summary, exits cleanly | Session lifecycle management (Mar 2026) |
 | [google-docs-markdown](./google-docs-markdown/) | Convert markdown to formatted Google Docs with folders, sharing, and logo branding | Event protocol delivery (Feb 2026) |
 | [google-drive-operator](./google-drive-operator/) | Analyze, restructure, and manage Google Drive shared folders with full CRUD operations | Client feedback collaboration space (Feb 2026) |
