@@ -99,12 +99,24 @@ async function blob() {
   return blobMod;
 }
 
+// The blob filename is fixed (addRandomSuffix: false), so its URL is stable: resolve
+// it once per instance with head() (a simple operation) instead of list() (a billed
+// "advanced operation") on every read — per-read list() exhausts the Blob free tier
+// (2K advanced ops/month on Hobby) under normal traffic.
+let blobUrlMemo = null;
+
 async function blobGet(backend) {
-  const { list } = await blob();
-  const { blobs } = await list({ prefix: BLOB_FILENAME, token: backend.token });
-  const match = blobs.find((b) => b.pathname === BLOB_FILENAME);
-  if (!match) return null;
-  const res = await fetch(match.url);
+  if (!blobUrlMemo) {
+    const { head } = await blob();
+    try {
+      const meta = await head(BLOB_FILENAME, { token: backend.token });
+      blobUrlMemo = meta.url;
+    } catch (e) {
+      if (e.name === 'BlobNotFoundError') return null; // nothing saved yet
+      throw e;
+    }
+  }
+  const res = await fetch(blobUrlMemo);
   if (!res.ok) return null;
   try {
     return await res.json();
@@ -115,13 +127,14 @@ async function blobGet(backend) {
 
 async function blobSet(backend, content) {
   const { put } = await blob();
-  await put(BLOB_FILENAME, JSON.stringify(content), {
+  const result = await put(BLOB_FILENAME, JSON.stringify(content), {
     access: 'public',
     contentType: 'application/json',
     addRandomSuffix: false,
     allowOverwrite: true,
     token: backend.token,
   });
+  blobUrlMemo = result.url;
 }
 
 export async function readContent() {
