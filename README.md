@@ -27,6 +27,7 @@ Every skill here was built to solve a real problem on a real project -- then gen
 | [unwoke](./unwoke/) | Strip AI theater and ideological bias -- 10 sins, 10 rules, 7-point self-check for truth-seeking responses | Anti-woke AI communication research (Mar 2026) |
 | [vibe-engineer](./vibe-engineer/) | The discipline for directing AI codegen -- 5 principles + 5 triggers, applied to Claude's own output too | Google Code Comprehension Interview analysis (May 2026) |
 | [vibe-proof](./vibe-proof/) | Security hardening for vibe-coded full-stack apps via parallel multi-agent audit (v2: 85+ issues across 2 projects) | E-commerce + medical platform hardening (Feb 2026) |
+| [vercel-inline-cms](./vercel-inline-cms/) | Install a lightweight inline-editing CMS into any Vercel-deployed project — auto-detects framework (Next.js App/Pages Router, Vite + React) and ships a manual-port guide for SvelteKit/Astro/Nuxt/static | Nickson Studios website CMS, generalized for Vercel (May 2026) |
 
 ---
 

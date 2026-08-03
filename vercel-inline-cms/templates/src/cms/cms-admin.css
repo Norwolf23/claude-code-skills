@@ -1,0 +1,320 @@
+/* Vercel Inline CMS — admin UI styles.
+ * Plain CSS (no Tailwind, no preprocessor). Theme via CSS variables — override any of
+ * these in your own stylesheet AFTER importing this file to rebrand the admin.
+ *
+ * Import once in your app entry (e.g. src/main.jsx for Vite, app/layout.tsx for Next.js):
+ *   import './cms/cms-admin.css';
+ */
+
+:root {
+  --cms-bg: #0a0a0a;
+  --cms-bg-elevated: #171717;
+  --cms-bg-elevated-2: #262626;
+  --cms-border: #262626;
+  --cms-border-strong: #404040;
+  --cms-text: #f5f5f5;
+  --cms-text-muted: #a3a3a3;
+  --cms-text-faint: #737373;
+  --cms-accent: #f97316;
+  --cms-accent-soft: rgba(249, 115, 22, 0.1);
+  --cms-success: #10b981;
+  --cms-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  --cms-toolbar-z: 60;
+}
+
+.cms-login-screen {
+  min-height: 100vh;
+  background: var(--cms-bg);
+  color: var(--cms-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.cms-login-checking {
+  min-height: 100vh;
+  background: var(--cms-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--cms-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cms-text-muted);
+}
+
+.cms-login-form {
+  position: relative;
+  width: 100%;
+  max-width: 24rem;
+  border: 1px solid var(--cms-border);
+  background: var(--cms-bg-elevated);
+  padding: 2rem;
+  border-radius: 0.25rem;
+}
+
+.cms-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.cms-pulse {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: var(--cms-accent);
+  animation: cms-pulse 2s ease-in-out infinite;
+}
+
+@keyframes cms-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.cms-eyebrow {
+  font-family: var(--cms-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cms-text-muted);
+}
+
+.cms-login-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.5rem;
+}
+
+.cms-login-subtitle {
+  font-size: 0.875rem;
+  color: var(--cms-text-muted);
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
+}
+
+.cms-field-label {
+  display: block;
+}
+
+.cms-field-label-text {
+  display: block;
+  font-family: var(--cms-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cms-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.cms-field-input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--cms-border-strong);
+  color: var(--cms-text);
+  font-family: var(--cms-mono);
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+  outline: none;
+  transition: border-color 150ms ease;
+}
+
+.cms-field-input:focus {
+  border-bottom-color: var(--cms-accent);
+}
+
+.cms-error {
+  margin-top: 1rem;
+  font-family: var(--cms-mono);
+  font-size: 0.75rem;
+  color: var(--cms-accent);
+}
+
+.cms-btn-primary {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-family: var(--cms-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: 1px solid var(--cms-accent);
+  color: var(--cms-accent);
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.cms-btn-primary:hover:not(:disabled) { background: var(--cms-accent-soft); }
+.cms-btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* --- Toolbar --- */
+.cms-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--cms-toolbar-z);
+  background: rgba(23, 23, 23, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--cms-border);
+  color: var(--cms-text);
+}
+
+.cms-toolbar-row {
+  height: 3rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cms-toolbar-brand { display: flex; align-items: center; gap: 0.5rem; margin-right: 1rem; }
+
+.cms-toolbar-nav { display: flex; align-items: center; gap: 0.25rem; }
+
+.cms-toolbar-link {
+  padding: 0.375rem 0.75rem;
+  font-family: var(--cms-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: 1px solid transparent;
+  color: var(--cms-text-muted);
+  text-decoration: none;
+  transition: color 150ms ease, background-color 150ms ease;
+}
+.cms-toolbar-link:hover { color: var(--cms-text); }
+.cms-toolbar-link.is-active {
+  color: var(--cms-text);
+  border-color: var(--cms-border-strong);
+  background: var(--cms-bg-elevated-2);
+}
+
+.cms-toolbar-right { margin-left: auto; display: flex; align-items: center; gap: 0.75rem; }
+
+.cms-status {
+  font-family: var(--cms-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cms-text-muted);
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (min-width: 640px) { .cms-status { display: flex; } }
+
+.cms-status-dot {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 9999px;
+  background: var(--cms-success);
+}
+.cms-status-dot.is-dirty {
+  background: var(--cms-accent);
+  animation: cms-pulse 2s ease-in-out infinite;
+}
+
+.cms-btn-ghost {
+  padding: 0.375rem 0.75rem;
+  font-family: var(--cms-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cms-text-muted);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: color 150ms ease;
+}
+.cms-btn-ghost:hover:not(:disabled) { color: var(--cms-text); }
+.cms-btn-ghost:disabled { opacity: 0.3; cursor: not-allowed; }
+.cms-btn-ghost.is-danger:hover { color: var(--cms-accent); }
+
+.cms-btn-save {
+  padding: 0.375rem 0.75rem;
+  font-family: var(--cms-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: 1px solid var(--cms-accent);
+  color: var(--cms-accent);
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+.cms-btn-save:hover:not(:disabled) { background: var(--cms-accent-soft); }
+.cms-btn-save:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.cms-toolbar-view-link {
+  display: none;
+  padding: 0.375rem 0.75rem;
+  font-family: var(--cms-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cms-text-muted);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+@media (min-width: 768px) { .cms-toolbar-view-link { display: inline; } }
+.cms-toolbar-view-link:hover { color: var(--cms-text); }
+
+.cms-error-banner {
+  padding: 0.5rem 1rem;
+  border-top: 1px solid rgba(249, 115, 22, 0.4);
+  background: var(--cms-accent-soft);
+  font-family: var(--cms-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--cms-accent);
+}
+
+/* --- Array controls --- */
+.cms-array-controls { margin-top: 1.5rem; }
+.cms-array-controls.is-inline { margin-top: 0; }
+
+.cms-btn-add {
+  font-family: var(--cms-mono);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(249, 115, 22, 0.8);
+  border: 1px solid rgba(249, 115, 22, 0.4);
+  background: transparent;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+.cms-btn-add:hover { color: var(--cms-accent); border-color: var(--cms-accent); }
+
+/* --- Inline editable fields ---
+ * Only visible when body has .cms-editing class (set by AdminShell).
+ */
+.cms-editing .cms-editable {
+  outline: 1px dashed transparent;
+  outline-offset: 4px;
+  transition: outline-color 150ms ease;
+  cursor: text;
+}
+.cms-editing .cms-editable:hover { outline-color: rgba(249, 115, 22, 0.4); }
+.cms-editing .cms-editable:focus {
+  outline: 1px solid var(--cms-accent);
+  outline-offset: 4px;
+}
+.cms-editing .cms-editable[data-cms-empty="true"]::before {
+  content: attr(data-cms-placeholder);
+  color: var(--cms-text-faint);
+  font-style: italic;
+}
+
+.cms-admin-body-padding { padding-top: 3rem; }
