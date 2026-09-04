@@ -86,6 +86,7 @@ templates/src/admin/ArrayControls.jsx    → src/admin/ArrayControls.jsx
 templates/src/content/defaultContent.js  → src/content/defaultContent.js
 templates/api/_lib/auth.js               → api/_lib/auth.js
 templates/api/_lib/store.js              → api/_lib/store.js
+templates/api/_lib/diff.js               → api/_lib/diff.js
 templates/api/content.js                 → api/content.js
 templates/api/login.js                   → api/login.js
 templates/api/logout.js                  → api/logout.js
@@ -95,6 +96,11 @@ templates/api/session.js                 → api/session.js
 Notes:
 - The `api/*.js` files use Vercel's Node serverless function convention. They live at the project root regardless of framework — Vercel routes them as separate functions even inside a Next.js project. No need to convert to `app/api/.../route.ts` for App Router.
 - The React components have `'use client'` at the top so they work as Client Components in Next.js App Router. Vite ignores the directive.
+- `api/content.js` imports `../src/content/defaultContent.js`; if `defaultContent.js` lives elsewhere (Next without `src/`), fix that import.
+
+**How the content blob is stored.** The write route prunes the draft against `defaultContent.js` (`_lib/diff.js`) and stores only the deviations — never a full snapshot.
+Arrays are stored wholesale once edited, so admin deletions stick.
+Untouched arrays are not stored at all, so items added to the code defaults later show up on the live site.
 
 For Next.js projects without a `src/` directory: put `cms/`, `admin/`, `content/` next to `app/` (or `pages/`). The components reference each other by relative paths only.
 
