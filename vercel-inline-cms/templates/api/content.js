@@ -1,8 +1,12 @@
 // CMS content endpoint.
 // GET  → public; returns the latest saved content blob (or empty so the client falls back to defaults).
-// POST → requires a valid session cookie; replaces the entire content blob with the request body.
+// POST → requires a valid session cookie; stores only what differs from DEFAULT_CONTENT
+//        (see _lib/diff.js) so arrays added to the defaults later still show on the site.
 import { isAuthed } from './_lib/auth.js';
 import { readContent, writeContent } from './_lib/store.js';
+import { diffFromDefaults } from './_lib/diff.js';
+// Pages Router: adjust to where defaultContent lives (e.g. '@/content/defaultContent').
+import { DEFAULT_CONTENT } from '../src/content/defaultContent.js';
 
 const MAX_BYTES = 256 * 1024; // hard cap so a runaway client can't blow up KV
 
@@ -29,7 +33,7 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'content must be an object' });
     }
 
-    await writeContent(parsed);
+    await writeContent(diffFromDefaults(DEFAULT_CONTENT, parsed) ?? {});
     return res.status(200).json({ ok: true });
   }
 

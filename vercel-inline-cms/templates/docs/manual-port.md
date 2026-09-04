@@ -168,6 +168,7 @@ Even on Tier 2 frameworks, you can copy these files unchanged:
 
 - `templates/api/_lib/auth.js` — HMAC-signed session cookie helpers.
 - `templates/api/_lib/store.js` — Vercel KV/Upstash + Blob auto-selecting storage.
+- `templates/api/_lib/diff.js` — prunes a saved draft to what differs from `defaultContent.js` before storing.
 - `templates/api/login.js`, `logout.js`, `session.js`, `content.js` — the four endpoints.
 
 Drop them under `/api/` at your project root. Vercel will route them as serverless functions for **any** project type.
